@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-rox</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="Init()">
+    <div class="screen" id="menu">
+        <button onclick="Start(0)">Symbol zleva</button>
+        <button onclick="Start(2)">Symbol shora</button>
+
+        <button onclick="Start(1)">Slovo zleva</button>
+        <button onclick="Start(3)">Slovo shora</button>
+    </div>
+    <div class="screen" id="game">
+        <button onclick="PlayAgain()">Play Again</button>
+        <hr>
+        <input type="text" id="ans">
+        <button onclick="Send()">Send</button>
+        <hr>
+        <canvas id="canvas" width="1024" height="512"></canvas>
+    </div>
+</body>
+</html>

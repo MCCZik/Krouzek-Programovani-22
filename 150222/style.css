@@ -1,0 +1,12 @@
+html {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #222;
+}
+
+button, input {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #444;
+    border: white solid 1px;
+}
