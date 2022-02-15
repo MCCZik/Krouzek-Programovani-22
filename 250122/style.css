@@ -1,0 +1,114 @@
+html {
+    background-color: hsl(300, 100%, 5%);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+body {
+    padding: 8px;
+    position: fixed;
+    top: -8px;
+    left: -8px;
+    height: 100vh;
+    width: 100vw;
+}
+
+input {
+    background-color: #0003;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 9vh;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button {
+    background-color: #0003;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 5vh;
+    position: fixed;
+    top: 50vh;
+    right: 12vw;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#above {
+    color: #fff8;
+    font-size: 4vh;
+    position: fixed;
+    bottom: 57vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    text-align: center; 
+}
+
+#below {
+    color: #fff8;
+    font-size: 4vh;
+    position: fixed;
+    top: 57vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    text-align: center; 
+}
+
+#level {
+    position: fixed;
+    bottom: 85vh;
+    right: 10vw;
+}
+
+#number {
+    font-size: 2em;
+    position: fixed;
+    bottom: 84vh;
+    left: 91vw;
+}
+
+#left {
+    position: fixed;
+    top: 85vh;
+    left: 10vw;
+}
+
+#lives {
+    font-size: 2em;
+    position: fixed;
+    top: 84vh;
+    right: 91vw;
+}
+
+.border1 {
+    border: outset 4px #333;
+    border-radius: 8px;
+}
+
+.border2 {
+    border: outset 4px rgb(109, 67, 34);
+    border-radius: 8px;
+}
+
+.border3 {
+    border: outset 4px rgb(121, 121, 121);
+    border-radius: 8px;
+}
+
+.border4 {
+    border: outset 4px rgb(250, 185, 5);
+    border-radius: 8px;
+}
+
+.border5 {
+    border: outset 4px rgb(172, 206, 206);
+    border-radius: 8px;
+}
+
+.border6 {
+    border: outset 4px rgb(159, 76, 170);
+    border-radius: 8px;
+}
