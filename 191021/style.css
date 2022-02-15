@@ -1,0 +1,28 @@
+html {
+    background-color: black;
+    color: lime;    
+    font-family: 'Comic Sans MS', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+img {
+    height: 64px;
+    margin: 256px;
+}
+
+td {
+    border: lime 2px dashed;
+    padding: 60px;
+    border-radius: 16px;
+}
+
+.roztomile_texty {
+    color: pink;
+}
+
+#uwu {
+    font-size: x-large;
+}
