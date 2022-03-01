@@ -1,6 +1,7 @@
 html {
     background: linear-gradient(135deg, rgb(152, 73, 204), rgb(60, 40, 172));
     color: white;
+    witdh: 100%;
     font-family: "Comic Sans MS", Verdana, Geneva, Tahoma, sans-serif;
 }
 
