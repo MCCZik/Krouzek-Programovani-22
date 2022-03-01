@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(135deg, rgb(152, 73, 204), rgb(60, 40, 172));
+    background: linear-gradient(90deg, rgb(152, 73, 204), rgb(60, 40, 172));
     color: white;
     width: 100%;
     font-family: "Comic Sans MS", Verdana, Geneva, Tahoma, sans-serif;
@@ -16,4 +16,14 @@ button {
     background: linear-gradient(135deg, rgb(177, 134, 206),rgb(107, 92, 194));
     color: black;
     font-family: "Comic Sans MS", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    position: absolute;
+    top: 47%;
+    left: 42%;
+}
+
+#output {
+    font-size: larger;
 }

@@ -1,5 +1,5 @@
-var answer
-var score 
+var answer;
+var score; 
 
 function init(){
     score = 100;
@@ -26,7 +26,8 @@ function send(){
         for (let i = 0; i < 10; i++) {
             output[1] += Math.min(pocty1[i], pocty2[i]);
         }
-        document.getElementById('output').innerHTML += input + " (correct:" + output[0] + " ,semicorrect:" + output[1] + ")<br>";
+        document.getElementById('score').innerText = "Score: " + score;
+        document.getElementById('output').innerHTML += "<b>" + input + "</b>" + " (correct: " + output[0] + ", semicorrect: " + output[1] + ")<br>";
         if (score <= 0) lose();
     }
 }
