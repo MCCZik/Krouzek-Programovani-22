@@ -38,6 +38,7 @@ ul {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 10px;
   }
   
   .dropdown-content a {
@@ -62,7 +63,7 @@ ul {
   font-family: 'Source Sans Pro';
 }
 
-h2 {
+h2, h3 {
   margin: 3px;
 }
 
@@ -78,4 +79,34 @@ footer {
   color: white;
   padding: 14px 16px;
   background-color: #38444db0;
+}
+
+.box {
+  width: 500px;
+  height: 180px;
+  border: 1px lightgray solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.box p {
+  font-size: smaller;
+}
+
+.box button {
+  width: 70px;
+  height: 30px;
+  background-color: lightgray;
+  border: #38444db0 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+  float: right;
+}
+
+.box span {
+  float: left;
+  font-style: italic;
+  color: #38444db0;
+  margin: 10px;
+  font-size: small;
 }
