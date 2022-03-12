@@ -4,26 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="s.js"></script>
     <title>ZŠTGM | Domů</title>
 </head>
-<body>
+<body onload="Init()">
     <ul id="menu">
-        <li><a href="index.html">Domů</a></li>
-        <li><a href="kontakty.html">Kontakty</a>
-        <li><a href="about.html">O škole</a></li>
+        <li><a onclick="switchScreen('home')">Domů</a></li>
+        <li><a onclick="switchScreen('kontakty')">Kontakty</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">O škole</a>
+                <div class="dropdown-content">
+                    <a onclick="switchScreen('charakteristika')">Charakteristika</a>
+                    <a href="#">Vize</a>
+                    <a href="#">Školská rada</a>
+                    <a href="#">ŠPP</a>
+                    <a href="#">Angličtina od I.tř.</a>
+                    <a href="#">Žákovská rada</a>
+                    <a href="#">Pracovní příležitosti</a>
+                    <a onclick="switchScreen('dokumenty')">Dokumenty</a>
+                </div>
+            </li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Studium</a>
             <div class="dropdown-content">
                 <a href="#">Organizace šk. roku 22/23</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Rozmístění tříd</a>
+                <a href="#">Rozvrhy tříd</a>
+                <a href="#">Volitelné a nepovinné předměty</a>
             </div>
         </li>
-    </ul>
-    <div>
-        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Pro rodiče</a>
+            <div class="dropdown-content">
+                <a href="#">Pro prvňáčky</a>
+                <a href="#">1. stupeň</a>
+                <a href="#">Pro budoucí šesťáky</a>
+                <a href="#">Pro vycházející žáky</a>
+            </div>
+        </li>
+    </ul>   
+    <div class="screen" id="home">
+        <h1>Aktuality</h1>
     </div>
+    <div class="screen" id="kontakty">
+        <h1>Kontakty</h1>
+        <h2>Adresa</h2>
+        <p>ZŠ T. G. Masaryka Opava, Riegrova 13 - příspěvková organizace</p>
+        <p>Riegrova 13, 746 01 Opava</p>
+        <p>IČO: 47813300</p>
+        <p>ID datové schránky: ezhgysd</p>
+    </div>
+    <div class="screen" id="charakteristika">csccscs
+    </div>
+    <footer><center>&copy;ZŠ T.G. Masaryka Opava, Riegrova 13 - p.o.</center></footer>
 </body>
 </html>

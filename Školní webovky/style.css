@@ -53,3 +53,29 @@ ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+.screen {
+  margin-top: 60px;
+}
+
+* {
+  font-family: 'Source Sans Pro';
+}
+
+h2 {
+  margin: 3px;
+}
+
+p {
+  margin: 3px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 14px 16px;
+  background-color: #38444db0;
+}
