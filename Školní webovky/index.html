@@ -20,31 +20,31 @@
                 <a href="javascript:void(0)" class="dropbtn">O škole</a>
                 <div class="dropdown-content">
                     <a onclick="switchScreen('charakteristika')">Charakteristika</a>
-                    <a href="#">Vize</a>
-                    <a href="#">Školská rada</a>
-                    <a href="#">ŠPP</a>
-                    <a href="#">Angličtina od I.tř.</a>
-                    <a href="#">Žákovská rada</a>
-                    <a href="#">Pracovní příležitosti</a>
+                    <a onclick="switchScreen('vize')">Vize</a>
+                    <a onclick="switchScreen('skolska-rada')">Školská rada</a>
+                    <a onclick="switchScreen('spp')">ŠPP</a>
+                    <a onclick="switchScreen('aj-od-prvni')">Angličtina od I.tř.</a>
+                    <a onclick="switchScreen('zakovska-rada')">Žákovská rada</a>
+                    <a onclick="switchScreen('pracovni-prilezitosti')">Pracovní příležitosti</a>
                     <a onclick="switchScreen('dokumenty')">Dokumenty</a>
                 </div>
             </li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Studium</a>
             <div class="dropdown-content">
-                <a href="#">Organizace šk. roku 22/23</a>
-                <a href="#">Rozmístění tříd</a>
-                <a href="#">Rozvrhy tříd</a>
-                <a href="#">Volitelné a nepovinné předměty</a>
+                <a onclick="switchScreen('organizace')">Organizace šk. roku 22/23</a>
+                <a onclick="switchScreen('rozmisteni-trid')">Rozmístění tříd</a>
+                <a onclick="switchScreen('rozvrhy-trid')">Rozvrhy tříd</a>
+                <a onclick="switchScreen('volitelne-predmety')">Volitelné a nepovinné předměty</a>
             </div>
         </li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Pro rodiče</a>
             <div class="dropdown-content">
-                <a href="#">Pro prvňáčky</a>
-                <a href="#">1. stupeň</a>
-                <a href="#">Pro budoucí šesťáky</a>
-                <a href="#">Pro vycházející žáky</a>
+                <a onclick="switchScreen('pro-prvnacky')">Pro prvňáčky</a>
+                <a onclick="switchScreen('prvni-stupen')">1. stupeň</a>
+                <a onclick="switchScreen('pro-sestaky')">Pro budoucí šesťáky</a>
+                <a onclick="switchScreen('pro-vychazejici')">Pro vycházející žáky</a>
             </div>
         </li>
     </ul>   
@@ -65,7 +65,75 @@
         <p>IČO: 47813300</p>
         <p>ID datové schránky: ezhgysd</p>
     </div>
-    <div class="screen" id="charakteristika">csccscs
+    <div class="screen" id="charakteristika">
+        <h1>Charakteristika</h1>
+        <p>
+            Jsme klasická základní škola s rozšířenou výukou výtvarné výchovy. V současnosti vzděláváme 530 žáků. Naše škola se zaměřuje na vzdělávání jak nadaných žáků tak i žáků se speciálními vzdělávacími potřebami, pro které máme zřízeny speciální třídy. Jako jediná škola v Moravskoslezském kraji máme tyto třídy i na vyšším stupni.
+        </p>
+        <br>
+        <p>
+            Pravidelně nabízíme testování IQ - co 2 roky.
+        </p>
+        <br>
+        <p>
+            Velký důraz klademe na výuku jazyků. Anglický jazyk vyučujeme už od 1. třídy. Dlouhodobě podporujeme také na jazykové vzdělávání našich pedagogických pracovníků. Od první třídy zavádíme do výuky prvky metody CLIL - jedná se o integrovanou výuku školního předmětu prostřednictvím cizího jazyka - angličtiny. Žák si osvojuje znalosti a dovednosti v obou předmětech současně. Vzhledem k náročnosti této metody jsme zvolili pozvolné nasazování do výuky, tak, aby žáci, učitelé i rodiče měli možnost si na nový styl práce zvyknut. Nicméně již nyní s prvky CLILu vyučuje 11 vyučujících naší školy, a to jak na prvním, tak na druhém stupni. Vzhledem k velkému potenciálu, který v této metodě vidíme, hodláme v rozvoji pokračovat.
+        </p>
+        <br>
+        <p>
+            V prvních třídách vyučujeme splývavým čtením Sfumato. Tato metoda umožňuje individuální přístup s respektováním věkových zvláštností a hned od počátku děti čtou s porozuměním.
+        </p>
+        <br>
+        <p>
+            Netradiční a moderní postupy (např. Abaku, CLIL, Sfumato, …), neustálé sebevzdělávání učitelů, výuka zaměřená na názornost a zážitky, učitelé, kteří jsou zvyklí vést hodinu podle individuálních schopností žáků – to jsou způsoby, které pomáhají všem žákům zažít ve výuce radost a úspěch.
+        </p>
+        <br>
+        <p>
+            Základní škola T.G.Masaryka je úplná škola s devíti postupnými ročníky. Její současná podoba je výsledkem sloučení dvou opavských základních škol, ZŠ T.G.Masaryka a ZŠ Mírová. Kapacita školy je 930 žáků. Výuka probíhá ve čtyřech budovách na ulicích Riegrova a Mírová v klidné části Opavy. V budovách na ulici Mírová jsou umístěny třídy prvního stupně a školní družina, v budovách na Riegrově ulici třídy druhého stupně a školní klub.
+        </p>
+        <br>
+        <p>
+            Obě původní hlavní budovy mají mnohaletou školní tradici. Škola disponuje školním hřištěm zařazeným do projektu Otevřená hřiště a rozsáhlou upravenou zahradou sloužící žákům prvního stupně a pobytu dětí v rámci školní družiny. Od dubna 2012 je na ulici Mírová otevřena Ekozahrada zde. V budově na Riegrově ulici je tělocvična, obě budovy jsou vybaveny počítačovými třídami, jazykovými učebnami, třídami s interaktivními tabulemi a dataprojektory, cvičnými kuchyněmi, dílnami, výtvarnými třídami s keramickou pecí a tiskařským lisem. V obou budovách je také výdejna obědů s jídelnou.
+        </p>
+    </div>
+    <div class="screen" id="vize">
+        <h1>Vize školy</h1>
+        <menu>
+            <li>Trvale pracovat na zdokonalování vlastního ŠVP</li>
+            <br>
+            <li>Nadále podporovat odbornou činnost <i>Školního poradenského pracoviště</i></li>
+            <br>
+            <li>Zvyšovat prestiž školy na veřejnosti - www.stránky, dny otevřených dveří, akademie, vernisáže, sportovní dny, články do novin, brožury, časopis, úspěchy,  prezentační materiály…</li>
+            <br>
+            <li>Zkvalitnit evaluační činnost školy –  pravidelně vyhodnocovat výsledky vzdělávání (testy,…)</li>
+            <br>
+            <li>Zapojit školu do projektů – evropských, republikových – popř.partnerství</li>
+            <br>
+            <li>Vytvářet a posilovat přátelskou atmosféru mezi žáky a učiteli založenou na toleranci, vzájemné úctě a pocitu zodpovědnosti</li>
+            <br>
+            <li>Pečovat o žáky talentované i méně nadané, žáky se zdravot. postižením</li>
+            <br>
+            <li>Vytvářet co nejlepší podmínky pro pozitivní klima všech zaměstnanců</li>
+            <br>
+            <li>Podporovat iniciativu pedagogů i ostatních zaměstnanců, ocenit kvalitní práci</li>
+            <br>
+            <li>Soustavně podporovat další vzdělávání pedagogů – pro potřebu školy</li>
+            <br>
+            <li>Modernizovat vyučovací proces, používat nové metody a formy práce</li>
+            <br>
+            <li>Zdokonalovat řídící činnost, zkvalitnit komunikaci a informovanost pedagogických pracovníků, vést učitele k aktivnímu podílu</li>
+            <br>
+            <li>Vytvořit vhodné podmínky pro činnost školní družiny, školního klubu, dalších mimoškolních aktivit</li>
+            <br>
+            <li>Zlepšovat estetický vzhled školy (4 budovy), školní zahrady, modernizace pracovního prostředí</li>
+            <br>
+            <li>Využívat spolupráce s rodiči, dalšími organizacemi, partnery školy</li>
+            <br>
+            <li>Každoročně uspořádat pobyty dětí na LVZ, ŠvP, adaptačních kurzech…</li>
+            <br>
+            <li>Pokračovat ve spolupráci se ZŠ v Ratiboři, najít partnera na Slovensku</li>
+            <br>
+            <li>Doplňovat vybavení školy nábytkem,pomůckami - zajistit efektivitu využití</li>
+        </menu>
     </div>
     <footer><center>&copy;ZŠ T.G. Masaryka Opava, Riegrova 13 - p.o.</center></footer>
 </body>
