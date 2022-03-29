@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scr.js"></script>
+</head>
+<body onload="init()">
+    <div class="screen" id="loading">
+        Načítání...
+    </div>
+    <div class="screen" id="menu">
+        <div id="menu_login">
+            <h2>Přihlášení</h2>
+            <p>Jsem tu opětovně.</p>
+            <span class="tip">Nick</span><br>
+            <input type="text" id="login_nick"><br><br>
+            <span class="tip">Heslo</span><br>
+            <input type="password" id="login_pass"><br><br>
+            <button onclick="login()">Přihlásit se</button>
+        </div>
+        <div id="menu_register">
+            <h2>Registrace</h2>
+            <p>Jsem tu poprvé.</p>
+            <span class="tip">Nick</span><br>
+            <input type="text" id="register_nick"><br><br>
+            <span class="tip">Heslo</span><br>
+            <input type="password" id="register_pass1"><br><br>
+            <span class="tip">Heslo znovu</span><br>
+            <input type="password" id="register_pass2"><br><br>
+            <span class="tip">Barva</span><br>
+            <input type="color" id="register_color"><br><br>
+            <button onclick="register()">Zaregistrovat se</button>
+        </div>
+    </div>
+    <div class="screen" id="main">
+        <div id="channels">
+            <h2>Online</h2>
+            <div id="channel_cont">
+                <span class="channel"><span class="tip">#</span>General</span>
+                <span class="channel"><span class="tip">#</span>Sus</span>
+            </div>
+        </div>
+        <div id="messages">
+            <div id="message_cont">
+                <div class="message">
+                    <span class="message_nick">Quary</span>
+                    <span class="message_time">4:20 PM</span>
+                    <span class="message_value">Ello, worl'd</span>
+                </div>
+                <div class="message">
+                    <span class="message_nick">MCCZ</span>
+                    <span class="message_time">4:21 PM</span>
+                    <span class="message_value">Just missed it :(</span>
+                </div>
+            </div>
+        </div>
+        <div id="users">
+            <h2>Online</h2>
+            <div id="user_cont">
+                <div class="user">
+                    <span class="user_role">Frajer</span>
+                    <span class="user_name">Quary</span>
+                </div>
+                <div class="user">
+                    <span class="user_role">Lmao</span>
+                    <span class="user_name">MCCZ</span>
+                </div>
+            </div>
+        </div>
+        <div id="chat">
+            <textarea id="chat_input" cols="75" rows="2"></textarea>
+        </div>
+    </div>
+</body>
+</html>

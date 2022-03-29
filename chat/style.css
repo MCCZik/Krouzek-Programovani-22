@@ -1,0 +1,156 @@
+html {
+    background-color: rgb(32, 21, 58);
+    color: white;
+    font-family: Ubuntu;
+}
+
+#menu p, #menu h2 {
+    text-align: center;
+    width: calc(12px + 90%);
+}
+
+.tip {
+    color: #fff7;
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+h2 {
+    margin: 3px;
+}
+
+#menu input {
+    width: 90%;
+    padding: 6px;
+    background-color: #0006;
+    border: none;
+    color: white;
+    font-family: Ubuntu;
+    border-bottom: solid 2px #fff6;
+}
+
+#menu input[type="color"] {
+    padding: 0px;
+    width: calc(90% + 12px);
+    height: calc(1em + 18px);
+}
+
+#menu div {
+    width: 45vw;
+    display: block;
+    float: left;
+}
+
+#menu button {
+    cursor: pointer;
+    background-color: rgb(104, 84, 149);
+    width: calc(12px + 90%);
+    padding: 6px;
+    color: white;
+    border: outset 2px rgb(104, 84, 149);
+    font-family: Ubuntu;
+}
+
+#menu button:active {
+    background-color: rgb(46, 29, 85);
+    border: inset 2px rgb(46, 29, 85);
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#channels {
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.channel {
+    border-radius: 6px;
+    background-color: #fff3;
+    padding: 6px 0px;
+    margin: 4px;
+    display: block;
+    text-align: center;
+}
+
+#messages {
+    width: 70vw;
+    height: 90vh;
+    position: fixed;
+    top: 0px;
+    left: 15vw;
+}
+
+#users {
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 85vw;
+}
+
+.user {
+    background-color: #0003;
+    margin: 4px;
+}
+
+.user_role {
+    color: #fff7;
+    font-style: italic;
+}
+
+.user_name {
+    font-weight: 700;
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+#chat {
+    width: 70vw;
+    height: 10vh;
+    position: fixed;
+    top: 90vh;
+    left: 15vw;
+}
+
+#message_cont {
+    width: 70vw;
+    position: fixed;
+    bottom: 10vh;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 4px;
+    padding: 8px;
+    background-color: #0004;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message_nick {
+    width: 50%;
+    font-weight: 700;
+}
+
+.message_time {
+    width: 50%;
+    text-align: right;
+    color: #fff7;
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+.message_value {
+    width: 100%;
+}
