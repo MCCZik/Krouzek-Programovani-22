@@ -1,0 +1,43 @@
+html {
+    font-family: 'Source Sans Pro';
+    color: white;
+    background-image: linear-gradient(75deg, rgb(0, 50, 214), rgb(76, 0, 255), rgb(140, 0, 255), rgb(217, 0, 255));
+}
+input {
+    width: 500px;
+    height: 45px;
+    background-color: rgba(34, 34, 34, 0.657);
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-radius: 1px;
+    border-bottom: 4px rgba(48, 48, 48, 0.548) solid;
+}
+button {
+    font-family: 'Source Sans Pro';
+    color: white;
+    width: 500px;
+    height: 45px;
+    border-radius: 2px;
+    border: rgba(0, 0, 0, 0) 1px solid;
+    background-color: rgb(76, 0, 255);
+}
+button:hover {
+    background-color: rgb(63, 0, 211);
+}
+#menu_login, #menu_register {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(34, 34, 34, 0.753);
+    border-radius: 20px;
+    padding: 50px;
+}
+h4 {
+    margin-bottom: 5px;
+}
+a {
+    color: rgba(92, 92, 92, 0.788);
+}
+a:hover {
+    color: rgba(53, 53, 53, 0.788);
+}

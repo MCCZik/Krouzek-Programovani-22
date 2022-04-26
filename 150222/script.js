@@ -89,3 +89,7 @@ function Send() {
         SwitchScreen('menu');
     }
 }
+
+function KD(e) {
+    if (e.keyCode == 13) Send();
+}

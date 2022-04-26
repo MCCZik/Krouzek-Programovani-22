@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Česká vlajka</title>
+
+    <script src="script.js"></script>
+</head>
+<body onload="init()" style="background-color: #444;">
+    <select id="rozliseni" onchange="init()">
+        <option value="0">600x400</option>
+        <option value="1">650x433</option>
+        <option value="2">700x466</option>
+        <option value="3">750x500</option>
+        <option value="4">800x533</option>
+        <option value="5">850x566</option>
+        <option value="6">900x600</option>
+        <option value="7">950x633</option>
+        <option value="8">1000x666</option>
+        <option value="9">1050x700</option>
+        <option value="10">1100x733</option>
+        <option value="11">1150x766</option>
+        <option value="12">1200x800</option>
+    </select>
+    <hr>
+    <canvas id="canvas" width="1200" height="800"></canvas>
+</body>
+</html>

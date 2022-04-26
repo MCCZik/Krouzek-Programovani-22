@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscord</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scr.js"></script>
+</head>
+<body onload="Init()">
+    <div class="screen" id="loading">
+        Načítání...
+    </div>
+    <center><h1>Suscord</h1></center>
+    <div class="screen" id="menu_login">
+        <h2>Vítej zpět, kočko! Rádi tě tu opět vidíme!</h2>
+        <h4>Uživatelské jméno</h4>
+        <input type="text" id="login_nick">
+        <h4>Heslo</h4>
+        <input type="password" id="login_pass">
+        <br><br>
+        <a href="#" onclick="switchScreen('menu_register')">Ještě nemáš učet? Zaregistruj se zde!</a>
+        <br>
+        <button onclick="Login()">Přihlásit se</button>
+    </div>
+    <div class="screen" id="menu_register">
+        <h2>Jsi nový? Nevadí! Zaregistruj se zde!</h2>
+        <h4>Uživatelské jméno</h4>
+        <input type="text" id="register_nick">
+        <h4>Heslo</h4>
+        <input type="password" id="register_pass1">
+        <h4>Heslo znovu</h4>
+        <input type="password" id="register_pass1">
+        <h4>Barva</h4>
+        <input type="color" id="register_color" value="#fff">
+        <br><br>
+        <a href="#" onclick="switchScreen('menu_login')">Již máš účet? Přihlaš se zde!</a>
+        <br>
+        <button onclick="Login()">Přihlásit se</button>
+    </div>
+    <div class="screen" id="main">
+        <div id="channels">
+
+        </div>
+        <div id="messages">
+            <div class="messages">
+                <span class="message_nick">MCCZ</span>
+                <span class="message_time">tajm</span>
+                <span class="message_value">ur mom</span>
+            </div>
+            <div class="messages">
+                <span class="message_nick">Quary</span>
+                <span class="message_time">now</span>
+                <span class="message_value">u gae</span>
+            </div>
+            <div class="messages">
+                <span class="message_nick">Tarzan</span>
+                <span class="message_time">NEMÁM ČAS</span>
+                <span class="message_value">*kašel*</span>
+            </div>
+        </div>
+        <div id="users">
+            <div class="user">
+                <span class="user_role">Owner</span>
+                <span class="user_name">MCCZ</span>
+            </div>
+        </div>
+        <div id="chat">
+            <textarea id="chat_input" cols="75" rows="2"></textarea>
+        </div>
+    </div>
+</body>
+</html>
