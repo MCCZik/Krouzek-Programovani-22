@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Roomek</title>
+
+    <script src="js.js"></script>
+</head>
+<body onload="init()">
+    <button onclick="newRoom()">Nový</button>
+    <button onclick="saveRoom()">Uložit</button>
+    <hr>
+    Obrázek: <input type="file" id="input_img" onchange="addImage()">
+    <hr>
+    <canvas onmousemove="mouseMove(event)" onclick="mouseClick()" id="canvas" width="1280" height="720"></canvas>
+    <hr>
+    <button onclick="addElement()">Přidat Element</button>
+    <button onclick="addObject()">Přidat Objekt</button>
+    <div id="cont"></div>
+    <hr>
+    <textarea id="save" cols="30" rows="10"></textarea>
+    <div hidden id="sample">
+        <div class="elem">
+            ID <input type="text" onchange="displayRoom()"> | Pozice <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> | Velikost <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> | <button onclick="event.path[1].outerHTML = ''">X</button>
+        </div>
+    </div>
+    <div hidden id="sample2">
+        <div class="img">
+            BOOL <input type="text" onchange="displayRoom()"> | Pozice <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> | Velikost <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> <input type="number" value="100" min="0" max="1300" step="10" onchange="displayRoom()"> | OBRÁZEK <input type="file" onchange="displayRoom()"> | <button onclick="event.path[1].outerHTML = ''">X</button>
+        </div>
+    </div>
+</body>
+</html>
